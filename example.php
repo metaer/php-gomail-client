@@ -33,7 +33,7 @@ try{
     $mail->Body    = 'Тестовое тело письма';
 
     $mail->send();
-    echo 'Письмо успешно отправлено';
+    echo 'Письмо успешно отправлено', PHP_EOL;
 } catch (Exception $e) {
     echo PHP_EOL, "Письмо не отправлено. Ошибка: {$e->getMessage()}", PHP_EOL;
 }
