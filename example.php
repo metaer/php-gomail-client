@@ -5,8 +5,8 @@ use PHPMailer\PHPMailer\SMTP;
 
 require 'vendor/autoload.php';
 
-const USERNAME = 'username'; //Необходимо заменить на реальный логин
-const PASSWORD = 'password'; //Необходимо заменить на реальный пароль
+const SMTP_SERVER_USERNAME = 'username'; //Необходимо заменить на реальный логин
+const SMTP_SERVER_PASSWORD = 'password'; //Необходимо заменить на реальный пароль
 CONST EMAIL_TO = 'example@example.com'; //Необходимо заменить на email получателя
 
 try{
@@ -16,8 +16,8 @@ try{
     $mail->isSMTP();
     $mail->Host       = 'smtp.mailer-demo.ru';
     $mail->SMTPAuth   = true;
-    $mail->Username   = USERNAME;
-    $mail->Password   = PASSWORD;
+    $mail->Username   = SMTP_SERVER_USERNAME;
+    $mail->Password   = SMTP_SERVER_PASSWORD;
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
     $mail->CharSet    = "UTF-8";
