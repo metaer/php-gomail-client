@@ -31,6 +31,7 @@ try{
     $mail->addAddress(EMAIL_TO);
     $mail->Subject = 'Тестовая тема';
     $mail->Body    = 'Тестовое тело письма';
+    $mail->XMailer = 'php client lib';
 
     $mail->send();
     echo 'Письмо успешно отправлено', PHP_EOL;
