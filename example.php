@@ -3,11 +3,14 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
+// В качестве smtp-клиента скрипт использует библиотеку https://github.com/PHPMailer/PHPMailer
+// Подключить через composer: "composer require phpmailer/phpmailer"
+
 require 'vendor/autoload.php';
 
-const SMTP_SERVER_USERNAME = 'username'; //Необходимо заменить на реальный логин
-const SMTP_SERVER_PASSWORD = 'password'; //Необходимо заменить на реальный пароль
-CONST EMAIL_TO = 'example@example.com'; //Необходимо заменить на email получателя
+const SMTP_SERVER_USERNAME = 'username'; // Необходимо заменить на реальный логин
+const SMTP_SERVER_PASSWORD = 'password'; // Необходимо заменить на реальный пароль
+CONST EMAIL_TO = 'example@example.com'; // Необходимо заменить на email получателя
 
 try{
     $mail = new PHPMailer(true);

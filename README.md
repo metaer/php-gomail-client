@@ -1,3 +1,5 @@
+Пример использования: https://github.com/metaer/php-gomail-client/blob/master/example.php
+
 Как запустить демо:
 
 1. `git clone https://github.com/metaer/php-gomail-client`
