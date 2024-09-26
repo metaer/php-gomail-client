@@ -10,7 +10,7 @@ require 'vendor/autoload.php';
 
 const SMTP_SERVER_USERNAME = 'username'; // Необходимо заменить на реальный логин
 const SMTP_SERVER_PASSWORD = 'password'; // Необходимо заменить на реальный пароль
-CONST EMAIL_TO = 'example@example.com'; // Необходимо заменить на email получателя
+const EMAIL_TO = 'example@example.com'; // Необходимо заменить на email получателя
 const HOST = 'smtp.example.com'; // Необходимо заменить на хост smtp-сервера
 const PORT = 587; // Необходимо заменить на порт smtp-сервера
 const EMAIL_FROM = 'example@example.com'; // Необходимо заменить на email отправителя
